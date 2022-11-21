@@ -277,7 +277,21 @@ flex-елементів.
 .block7:hover .block7__item:nth-child(3) {
 	align-self: flex-end;
 }
-
+.block8{
+	border: 5px solid #ac260c;
+	background-color: #794f45;
+	height: 120px;
+	display: flex;
+	flex-wrap: wrap; 
+	align-items: stretch; 
+	column-gap: 15px; 
+	row-gap: 30px;
+	justify-content: start; 
+	/* flex-direction: row-reverse; */
+}
+.block6:hover{
+	flex-direction: column; 
+	}
 
 /* 
 Властивості FLEX – елементів. 
@@ -328,7 +342,9 @@ order
 
 /* FLEX-елементи */
 .block__item,
-.block7__item {
+.block7__item,
+.block8__item
+{
 	color: #fff;
 	display: block;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
