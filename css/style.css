@@ -242,7 +242,6 @@ flex-елементів.
 	height: 120px;
 	display: flex;
 	flex-wrap: wrap; 
-	justify-content: center; 
 	align-items: stretch; 
 	column-gap: 15px; 
 	row-gap: 30px;
@@ -252,6 +251,32 @@ flex-елементів.
 .block6:hover{
 	flex-direction: column; 
 	}
+
+	.block7{
+		border: 5px solid #ac260c;
+		background-color: #794f45;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap; 
+		justify-content: center; 
+		align-items: flex-start; 
+		column-gap: 5px; 
+		row-gap: 10px;
+		/* justify-content: start;  */
+		/* flex-direction: row-reverse; */
+	}
+	.block7:hover{
+		flex-direction: column-reverse; 
+		}
+		.block7:hover .block7__item:nth-child(2) {
+	align-self: flex-end;
+	flex-grow: 1;
+}
+
+.block7:hover .block7__item:nth-child(3) {
+	align-self: flex-end;
+}
 
 
 /* 
@@ -302,7 +327,8 @@ order
 */
 
 /* FLEX-елементи */
-.block__item {
+.block__item,
+.block7__item {
 	color: #fff;
 	display: block;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
