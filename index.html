@@ -128,12 +128,24 @@
 					<!-- FLEX-елемент -->
 					<span class="block8__item"><span>2</span></span>
 					<!-- FLEX-елемент -->
-					<div class="block8__item"><span>3 </span></div>
+					<div class="block8__item"><span>3. застосуй ширину екрану 500px</span></div>
 					<!-- FLEX-елемент -->
 					<a href="" class="block8__item"><span>4</span></a>
 				</div>
 			</div>
-
+			<div class="page__block">
+				<!-- FLEX-контейнер -->
+				<div class="block9">
+					<!-- FLEX-елемент -->
+					<div class="block9__item"><span>1</span></div>
+					<!-- FLEX-елемент -->
+					<span class="block9__item"><span>2</span></span>
+					<!-- FLEX-елемент -->
+					<div class="block9__item"><span>3</span></div>
+					<!-- FLEX-елемент -->
+					<a href="" class="block9__item"><span>4</span></a>
+				</div>
+			</div>
 
 
 			<div class="page__block">
@@ -175,9 +187,10 @@
 				<!-- Приклад з текстом -->
 				<div class="text-block">
 					<h1 class="text-block__title">Я заголовок</h1>
-					<a href="" class="text-block__link">Я посилання</a>
+					<a href="https://www.youtube.com/watch?v=Beia121h-f8&t=8125s" class="text-block__link" target="_blank">Я посилання</a>
 					<div class="text-block__text">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit praesentium adipisci. Delectus veritatis nam unde doloremque incidunt vitae in facilis neque ullam quod rerum iusto repellat molestiae, alias at.
+						В даному прикладі при наведенні курсору візуально видно збільшення проміжку та кольору блоків. Якщо поглянути в css код то видно що розташування елементів на 15 та 20px зроблено 2-ма різними шляхами для можливості правильно їх застосовувати в майбутньоми різними шляхами, і тільки властивість background-color показує як міняються кордони блоків. Більш детально за лінком відео.
+						}
 					</div>
 				</div>
 			</div>
@@ -187,7 +200,7 @@
 					<div class="cards__column">
 						<div class="cards__item item-card">
 							<div class="item-card__image">
-								<img src="img/01.jpg" alt="">
+								<img src="img/rockstar.jpg" alt="">
 							</div>
 							<div class="item-card__text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
@@ -198,11 +211,11 @@
 					<div class="cards__column">
 						<div class="cards__item item-card">
 							<div class="item-card__image">
-								<img src="img/01.jpg" alt="">
+								<img src="img/rockstar.jpg" alt="">
 							</div>
 							<div class="item-card__text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+								При наведенні курсором додається властивість .cards:hover .item-card__text { flex-grow: 1;}, яка відповідно допомагає вирівняти всі кнопки по вертикалі, притискає їх до низу контейнера.
+
 							</div>
 							<a href="" class="item-card__button">Button</a>
 						</div>
@@ -210,7 +223,7 @@
 					<div class="cards__column">
 						<div class="cards__item item-card">
 							<div class="item-card__image">
-								<img src="img/01.jpg" alt="">
+								<img src="img/rockstar.jpg" alt="">
 							</div>
 							<div class="item-card__text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
@@ -223,20 +236,21 @@
 			</div>
 			<div class="page__block">
 				<!-- Приклад з width -->
-				<a href="" class="link">Я посилання</a>
+				<a href="https://www.youtube.com/watch?v=Beia121h-f8&t=9625s" class="link" target="_blank">За цим лінком можна подивитись як його вирівняти</a>
 			</div>
 			<div class="page__block">
 				<!-- Приклад з width №2 -->
 				<div class="object">
 					<div class="object__icon"></div>
 					<div class="object__title">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus magni inventore, eveniet enim veritatis fugiat corrupti? Minima voluptatum magni, animi corporis, laborum dolore facere nisi nulla repellat illum, consectetur doloremque?
+						Так текст впливає на об'єкт попереду, якщо недостатньо ширини(зменшуючи його).
+						Accusamus magni inventore, eveniet enim veritatis fugiat corrupti? Minima voluptatum magni, animi corporis, laborum dolore facere nisi nulla repellat illum, consectetur doloremque?
 					</div>
 				</div>
 			</div>
 			<div class="page__block">
 				<!-- Приклад з float -->
-				<img class="image" style="width: 100px;" src="img/01.jpg" alt="">
+				<img class="image__float" style="width: 100px;" src="img/01.jpg" alt="">
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi excepturi perferendis consectetur harum reiciendis dignissimos rem odio consequuntur? Voluptates, libero ullam repudiandae magni recusandae aperiam perspiciatis sit architecto quia unde?
 			</div>
 			<div class="page__block">
@@ -246,7 +260,7 @@
 							<img src="img/01.jpg" alt="">
 						</div>
 						<div class="item-example__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque id unde, facilis provident maxime voluptatem veritatis commodi omnis voluptate fugiat deserunt at, molestiae voluptas nihil culpa qui earum. Iste!
+							Просто поглянь! як швидко і легко будується в css ця конструкція тільки за допомогою властиворсті "nth-child(even){flex-direction: row-reverse;}" <br>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque id unde, facilis provident maxime voluptatem veritatis commodi omnis voluptate fugiat deserunt at, molestiae voluptas nihil culpa qui earum. Iste!
 						</div>
 					</div>
 					<div class="example__item item-example">
